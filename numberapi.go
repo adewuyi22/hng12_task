@@ -26,7 +26,7 @@ type ErrorResponse struct {
 }
 
 func main() {
-	http.HandleFunc("/api/classify-number", classifyNumberHandler)
+	http.HandleFunc("/", classifyNumberHandler)
 	http.ListenAndServe(":8080", nil)
 }
 
